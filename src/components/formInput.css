@@ -1,0 +1,32 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.form-input label {
+  font-weight: bold;
+}
+
+.form-input input {
+  line-height: 3rem;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  border: 1px solid gray;
+  outline: none;
+}
+
+span {
+  color: red;
+  /* text-align: start; */
+  font-size: 1rem;
+font-weight: bolder;
+  display: none;
+}
+input:invalid[focus="true"] {
+  border: 2px solid red;
+}
+input:invalid[focus="true"] ~ span {
+  display: block;
+}
+/* invalid GEÇERSİZ ise  */
+/* ~ Aynı ebeveyne sahip olmak şartıyla, sonra gelen bütün etiketleri seçmemizi sağlar. */
