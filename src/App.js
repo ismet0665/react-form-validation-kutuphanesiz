@@ -17,7 +17,7 @@ function App() {
       label: "Username",
       type: "text",
       placeholder: "Enter your username",
-      pattern: "^[a-zA-Z0-9]{3,10}$",
+      pattern: "^[a-zA-Z0-9]{3,16}$",
       errorMessage:
         " Username should be 3-16 charecters and shouldn'n include any special charecter!",
     },
@@ -34,7 +34,7 @@ function App() {
       id: 3,
       name: "password",
       label: "Password",
-      type: "text",
+      type: "password",
       placeholder: "Enter your password",
       pattern:
         "^(?=.*d)(?=.*[a-zA-Z])(?=.*[A-Z])(?=.*[-#$.%&*])(?=.*[a-zA-Z]).{8,16}$",
